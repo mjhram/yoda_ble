@@ -1,0 +1,47 @@
+bluetooth Data captured using bluetoothctl command:
+
+[CHG] Device D8:E7:2F:C8:BE:D3 ManufacturerData Key: 0x1ec0
+[CHG] Device D8:E7:2F:C8:BE:D3 ManufacturerData Value:
+  23 b4 13 88 00 00 25 00 00 00 00 00 00           
+--------
+        ManufacturerData Key: 0x1ec0
+        ManufacturerData Value:
+  23 b4 13 88 00 00 25 00 00 00 00 00 00           #.....%......
+        RSSI: -76
+        AdvertisingFlags:
+  00     
+--
+        ManufacturerData Key: 0x1fc0
+        ManufacturerData Value:
+  00 00 00 00 00 00 24 00 00 00 00 00 00 
+------------------------------
+[CHG] Device D8:E7:2F:C8:BE:D3 ManufacturerData Key: 0x1fc0
+[CHG] Device D8:E7:2F:C8:BE:D3 ManufacturerData Value:
+  23 a5 13 88 00 00 25 00 00 00 00 00 00   
+
+using hcidump --raw command
+
+pi@rpi:~ $ hcidump --raw
+...
+> HCI Event: LE Meta Event (0x3e) plen 36                                                                                                #39 [hci0] 5.638771
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Public (0x00)
+        Address: D8:E7:2F:C8:BE:D3 (Chipsea Technologies (Shenzhen) Corp.)
+        Data length: 24
+        Company: not assigned (36288)
+          Data: 00000000000024000000000000
+        Name (complete): Yoda1
+        RSSI: -71 dBm (0xb9)
+@ MGMT Event: ADV Monitor Device Found (0x002f) plen 40                                                                             {0x0001} [hci0] 5.638785
+        Handle: 0
+        Address: D8:E7:2F:C8:BE:D3 (Chipsea Technologies (Shenzhen) Corp.)
+        Addr Type: 1
+        RSSI: -71
+        Flags: 0x00000004
+          Not Connectable
+        AD Data Len: 24
+        AD Data: 10ffc08d000000000000240000000000000609596f646131
+
+...
