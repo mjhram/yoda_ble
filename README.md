@@ -1,17 +1,24 @@
 # yoda_ble
-Home Assistant integration for smart OKOK scale
+A custom Home Assistant integration to passively monitor the Yoda1/okok Bluetooth scale via BLE advertisements.
 
-# Installation:
+### What integration does
+parses weight from a okok/Yoda1 BLE scale
+
 ## Raspberry Pi Homeassistant requirements:
   - HACS should already be installed in HA
   - Add ESPHome (docker in case of docker HA)
-  - copy the files in this repo to <HA config folder>/custom_components/
+
+## Installation instructions:
+  - Manual copy the files in this repo to <HA config folder>/custom_components/yoda_ble/ 
   - add the integration as a sensor to HA configuration.yaml as follows (address is the scale MAC address):
+### configuration.yaml example
 ```
 sensor:
   - platform: yoda_ble
     address: "D8:E7:2F:C8:BE:D3"
 ```
+### What data is shown: weight and last_updated (as sensor attribute)
+
 ### Notes: 
 - MAC address can be obtained from any tool, such as:
 ```
