@@ -9,7 +9,7 @@ parses weight from a okok/Yoda1 BLE scale
   - Add ESPHome (docker in case of docker HA)
 
 ## Installation instructions:
-  - Manual copy the files in this repo to <HA config folder>/custom_components/yoda_ble/ 
+  - Manual copy the files in this repo __(/custom_components/yoda_ble/)__ to __&lt;HA config folder>/custom_components/yoda_ble/__ 
   - add the integration as a sensor to HA configuration.yaml as follows (address is the scale MAC address):
 ### configuration.yaml example
 ```
