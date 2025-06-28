@@ -2,9 +2,10 @@
   "domain": "yoda_ble",
   "name": "Yoda BLE Scale",
   "version": "1.3",
-  "documentation": "https://your-docs-url",
+  "documentation": "https://github.com/mjhram/yoda_ble",
+  "issue_tracker": "https://github.com/mjhram/yoda_ble/issues",
   "dependencies": ["bluetooth"],
-  "codeowners": ["@yourgithub"],
+  "codeowners": ["@mjhram"],
   "iot_class": "local_push",
   "config_flow": false,
   "bluetooth": [
