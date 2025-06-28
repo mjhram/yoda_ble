@@ -1,0 +1,7 @@
+{
+  "name": "Yoda BLE Scale",
+  "homeassistant": "2023.0.0",
+  "domain": "yoda_ble",
+  "country": "Any",
+  "zip_release": false
+}
