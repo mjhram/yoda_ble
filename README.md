@@ -29,3 +29,6 @@ bluetoothctl
 
 ## ESPHome:
   Install "Bluetooth proxy" from [Ready-Made projects](https://esphome.io/projects/)
+
+## Credits
+This integration was built with significant help from __ChatGPT__, especially for Bluetooth parsing, entity registration, and Home Assistant API usage.
