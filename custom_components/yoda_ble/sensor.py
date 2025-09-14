@@ -48,7 +48,7 @@ async def async_setup_platform(hass, config, async_add_entities, discovery_info=
         #_LOGGER.debug("Received BLE advertisement from %s", service_info.address)
         #_LOGGER.debug("Full advertisement: %s", service_info)
         # Entity update code goes here
-        if "Yoda" in service_info.name:
+        if "Yoda" not in service_info.name:
             _LOGGER.debug("Ignored advertisement from %s", service_info.name)
             return
 
